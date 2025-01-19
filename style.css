@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Chewy", serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD1D1;
+    height: 100vh;
+}
+
+.title {
+    color: #F38181;
+    font-size: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.board-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 528px;
+    width: 1040px;
+    background-color: #F38181;
+    border-radius: 10px;
+}
+
+.board {
+    background-color: #FFF5E4;
+    height: 512px;
+    width: 1024px;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-pixel {
+    width: 64px;
+    height: 64px;
+}
+
+.mid-pixel {
+    width: 32px;
+    height: 32px;
+}
+
+.small-pixel {
+    width: 16px;
+    height: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100px;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    background-color: #F38181;
+    color: #FFD1D1;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
